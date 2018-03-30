@@ -1,4 +1,5 @@
-export PATH = /usr/lib/ccache:$PATH
+#!/bin/bash
+export PATH=/usr/lib/ccache:$PATH
 mkdir ~/blender-git
 cd ~/blender-git
 git clone https://git.blender.org/blender.git
