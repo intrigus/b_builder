@@ -1,7 +1,15 @@
 language: c
 
+cache: ccache
+
 sudo: required 
 dist: trusty
 
-script: chmod +x build.sh
-./build.sh
+script:
+- ccache -s
+- chmod +x build.sh
+- ./build.sh
+
+after_script:
+- ccache -s
+
