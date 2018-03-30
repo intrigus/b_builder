@@ -9,6 +9,6 @@ git submodule foreach git checkout master
 git submodule foreach git pull --rebase origin master
 make update
 cd ~/blender-git
-./blender/build_files/build_environment/install_deps.sh
+yes | ./blender/build_files/build_environment/install_deps.sh
 cd ~/blender-git/blender
 make full
