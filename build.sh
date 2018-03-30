@@ -9,6 +9,6 @@ git submodule foreach git checkout master
 git submodule foreach git pull --rebase origin master
 make update
 cd ~/blender-git
-printf 'y\n' | ./blender/build_files/build_environment/install_deps.sh
+printf 'y\n' | ./blender/build_files/build_environment/install_deps.sh --with-all
 cd ~/blender-git/blender
 make full
