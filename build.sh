@@ -1,4 +1,6 @@
 #!/bin/bash
+
+set -x
 export PATH=/usr/lib/ccache:$PATH
 mkdir ~/blender-git
 cd ~/blender-git
@@ -24,3 +26,4 @@ cmake ../blender -C../blender/build_files/cmake/config/blender_release.cmake -DO
 #printf 'y\n' | ./blender/build_files/build_environment/install_deps.sh --with-all
 #cd ~/blender-git/blender
 #make full
+set +x
