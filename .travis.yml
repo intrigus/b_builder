@@ -6,6 +6,7 @@ sudo: required
 dist: trusty
 
 script:
+- sudo apt-get install build-essential
 - ccache -s
 - chmod +x build.sh
 - ./build.sh
