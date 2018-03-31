@@ -6,6 +6,9 @@ sudo: required
 dist: trusty
 
 script:
+- which yasm
+- sudo apt-get remove yasm
+- which yasm
 - sudo apt-get install nasm
 - ccache -s
 - chmod +x build.sh
