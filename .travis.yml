@@ -6,9 +6,7 @@ sudo: required
 dist: trusty
 
 script:
-- which yasm
-- sudo apt-get install yasm
-- which yasm
+- sudo apt-get install yasm xrandr-dev
 - ccache -s
 - chmod +x build.sh
 - ./build.sh
