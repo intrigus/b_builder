@@ -18,7 +18,7 @@ cd build-dir
 ls
 cmake ../blender/build_files/build_environment -DDOWNLOAD_DIR=$(pwd)/download -DHARVEST_TARGET=$(pwd)/../lib/linux_x86_64
 ls
-make -j2 install
+make install
 ls
 cmake ../blender -C../blender/build_files/cmake/config/blender_release.cmake -DOPENAL_LIBRARY=../lib/linux_x86_64/openal/lib/libopenal.a -DOPENAL_INCLUDE_DIR=../lib/linux_x86_64/openal/include
 #cd ~/blender-git
