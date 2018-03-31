@@ -9,6 +9,7 @@ git submodule foreach git checkout master
 git submodule foreach git pull --rebase origin master
 make update
 ls
+cd ..
 mkdir build-dir
 ls
 cd build-dir
