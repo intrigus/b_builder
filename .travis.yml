@@ -7,9 +7,10 @@ dist: trusty
 
 script:
 - sudo apt-get install yasm libxrandr-dev libx11-dev libxi-dev libxinerama-dev libxcursor-dev
+- ccache --set-config=max_size=2.0G
 - ccache -s
 - chmod +x build.sh
-- ./build.sh
+- timeout 40m ./build.sh
 
 after_script:
 - ccache -s
