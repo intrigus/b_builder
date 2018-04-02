@@ -6,7 +6,7 @@ sudo: required
 dist: trusty
 
 script:
-- sudo apt-get install yasm libxrandr-dev libx11-dev libxi-dev libxinerama-dev
+- sudo apt-get install yasm libxrandr-dev libx11-dev libxi-dev libxinerama-dev libxcursor-dev
 - ccache -s
 - chmod +x build.sh
 - ./build.sh
