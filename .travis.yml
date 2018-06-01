@@ -2,11 +2,21 @@ language: c
 
 cache: ccache
 
-sudo: required 
+sudo: false 
 dist: trusty
 
+addons:
+  apt:
+    packages:
+    - yasm
+    - libxrandr-dev
+    - libx11-dev
+    - libxi-dev
+    - libxinerama-dev
+    - libxcursor-dev
+
 script:
-- sudo apt-get install yasm libxrandr-dev libx11-dev libxi-dev libxinerama-dev libxcursor-dev
+#- sudo apt-get install yasm libxrandr-dev libx11-dev libxi-dev libxinerama-dev libxcursor-dev
 - ccache --max-size==2.0G
 - ccache -s
 - chmod +x build.sh
