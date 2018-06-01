@@ -20,7 +20,7 @@ script:
 - ccache --max-size==2.0G
 - ccache -s
 - chmod +x build.sh
-- timeout 40m ./build.sh 
+- timeout 40m ./build.sh
 
 after_script:
 - ccache -s
